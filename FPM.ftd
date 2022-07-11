@@ -4,5 +4,14 @@
 zip: github.com/gsalunke/ftd-color-schemes/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/forest-cs as colors
 
 -- fpm.auto-import: ds
+-- fpm.auto-import: colors
+
+
+-- fpm.sitemap:
+
+# Home: /index.html
+
+- Sample: /sample/
