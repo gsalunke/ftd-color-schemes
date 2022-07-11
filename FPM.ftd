@@ -1,8 +1,17 @@
 -- import: fpm
 
--- fpm.package: <user_name>.github.io/<repo_name>
-zip: github.com/<user_name>/<repo_name>/archive/refs/heads/main.zip
+-- fpm.package: gsalunke.github.io/ftd-color-schemes
+zip: github.com/gsalunke/ftd-color-schemes/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/forest-cs as colors
 
 -- fpm.auto-import: ds
+-- fpm.auto-import: colors
+
+
+-- fpm.sitemap:
+
+# Home: /index.html
+
+- Sample: /sample/

@@ -6,25 +6,6 @@
         <title># fpm-template
 FPM Blank Package Template Repo</title>
         <script type="ftd" id="ftd-data">{
-  "\u003Cuser_name\u003E.github.io/\u003Crepo_name\u003E/README/#content@0": {
-    "value": "# fpm-template\nFPM Blank Package Template Repo",
-    "dependencies": {
-      "0": [
-        {
-          "condition": null,
-          "dependency_type": "Value",
-          "parameters": {},
-          "remaining": null
-        },
-        {
-          "condition": "$IsNotNull$",
-          "dependency_type": "Visible",
-          "parameters": {},
-          "remaining": null
-        }
-      ]
-    }
-  },
   "fpm#theme-color": {
     "value": "#1F5E6B",
     "dependencies": {}
@@ -43,6 +24,25 @@ FPM Blank Package Template Repo</title>
     "value": "desktop",
     "dependencies": {
       "$value$": [
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "cd#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
         {
           "condition": "mobile",
           "dependency_type": "Variable",
@@ -67,6 +67,25 @@ FPM Blank Package Template Repo</title>
           "dependency_type": "Variable",
           "parameters": {
             "ds#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/color-doc/color-ui#is-mobile": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -289,6 +308,25 @@ FPM Blank Package Template Repo</title>
             }
           },
           "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "tp#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
         }
       ]
     }
@@ -304,6 +342,25 @@ FPM Blank Package Template Repo</title>
   "ftd#system-dark-mode": {
     "value": false,
     "dependencies": {}
+  },
+  "gsalunke.github.io/ftd-color-schemes/README/#content@0": {
+    "value": "# fpm-template\nFPM Blank Package Template Repo",
+    "dependencies": {
+      "0": [
+        {
+          "condition": null,
+          "dependency_type": "Value",
+          "parameters": {},
+          "remaining": null
+        },
+        {
+          "condition": "$IsNotNull$",
+          "dependency_type": "Visible",
+          "parameters": {},
+          "remaining": null
+        }
+      ]
+    }
   }
 }</script>
         <script type="ftd" id="ftd-external-children">{}</script>
